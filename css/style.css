@@ -1,0 +1,15 @@
+#logo {
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+
+}
+
+header {
+    border-bottom: 1px solid rgb(176, 169, 169);
+}
+
+footer {
+    background-color: gray;
+}
