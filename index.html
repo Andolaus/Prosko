@@ -8,20 +8,33 @@
         <link href="css\font\fontawesome-free-6.4.2-web\css\brands.css" rel="stylesheet">
         <link href="css\font\fontawesome-free-6.4.2-web\css\solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>Prosko</title>
+        <title>ProSko Nettbutikk</title>
     </head>
     <body>
         <header>            
             <nav>
-                <i class="fa-solid fa-bars" style="color: #000000;"></i>
-                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-                <a href="index.html" id="logo">Logo</a>
-                <i class="fa-solid fa-user" style="color: #000000;"></i>
-                <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                <a href="index.html" id="logo">ProSko</a>
+                <div>
+                    <i id="meny" class="fa-solid fa-bars" style="color: #000000;"></i>
+                    <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                    <i class="fa-solid fa-user" style="color: #000000;"></i>
+                    <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                </div>
+                <ul class="navbar">
+                    <li><a href="index.html">ProSko</a></li>
+                    <li><a href="index.html">Close</a></li>
+                    <li><a href="produkt.html">Woman</a></li>
+                    <li><a href="produkt.html">Men</a></li>
+                    <li><a href="produkt.html">Children</a></li>
+                    <li><a href=#>Brands</a></li>
+                    <li><a href=#>Accessories</a></li>
+                    <li><a href="login.html">Customer club</a></li>
+                </ul>
             </nav>
-            <img src="img/alexis-chloe-FcgxMCkjwEo-unsplash.jpg" alt="Image of a woman sitting on the grpping-texto>und with her legs crossed">
+            <img src="img/alexis-chloe-FcgxMCkjwEo-unsplash.jpg" alt="Image of a woman sitting on the ground with her legs crossed">
             <span class="overlapping-text">Tekst over bilde</span>
             <button class="button">See our products &rarr;</button> 
+        <div id="grid-container">
         </header>
         <main>
             <section>
@@ -91,22 +104,10 @@
             <section>
                 <h3>About us</h3>
                 <ul>
-                    <li>
-                        <h4>Customer Club</h4>
-                        <a href="#"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
-                    </li>
-                    <li>
-                        <h4>Privacy Policy</h4>
-                        <a href="#"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
-                    </li>
-                    <li>
-                        <h4>Purchase Terms</h4>
-                        <a href="#"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
-                    </li>
-                    <li>
-                        <h4>Frequently Asked Questions</h4>
-                        <a href="#"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
-                    </li>
+                    <li><a href="#">Customer Club<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
+                    <li><a href="#">Privacy Policy<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
+                    <li><a href="#">Purchase Terms<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
+                    <li><a href="#">Frequently Asked Questions<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
                 </ul>
             </section>
             <section>
@@ -130,5 +131,19 @@
             <button class="cookies"><i class="fa-solid fa-cookie-bite fa-2xl" style="color: #000000;"></i></button>
             <button class="contact"><i class="fa-solid fa-message fa-2xl" style="color: #000000;"></i></button>
         </footer>
+        </div>
+        <script>
+
+            let x = document.querySelector(".navbar")
+            
+            document.getElementById("meny").addEventListener("click", (e) => {
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+
+        </script>
     </body>
 </html>

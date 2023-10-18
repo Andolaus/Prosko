@@ -4,22 +4,36 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css\font\fontawesome-free-6.4.2-web\css\fontawesome.css" rel="stylesheet">
+        <link href="css\font\fontawesome-free-6.4.2-web\css\brands.css" rel="stylesheet">
+        <link href="css\font\fontawesome-free-6.4.2-web\css\solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <script src="https://kit.fontawesome.com/da63b81e86.js" crossorigin="anonymous"></script>
-        <title>Prosko</title>
+        <title>ProSko Products</title>
     </head>
     <body>
-        <header>            
+        <header>
             <nav>
-                <i class="fa-solid fa-bars" style="color: #000000;"></i>
-                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-                <a href="#" id="logo">Logo</a>
-                <i class="fa-solid fa-user" style="color: #000000;"></i>
-                <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                <a href="index.html" id="logo">ProSko</a>
+                <div>
+                    <i id="meny" class="fa-solid fa-bars" style="color: #000000;"></i>
+                    <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                    <i class="fa-solid fa-user" style="color: #000000;"></i>
+                    <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                </div>
+                <ul class="navbar">
+                    <li><a href="index.html">ProSko</a></li>
+                    <li><a href="produkt.html">Close</a></li>
+                    <li><a href="produkt.html">Woman</a></li>
+                    <li><a href="produkt.html">Men</a></li>
+                    <li><a href="produkt.html">Children</a></li>
+                    <li><a href=#>Brands</a></li>
+                    <li><a href=#>Accessories</a></li>
+                    <li><a href="login.html">Customer club</a></li>
+                </ul>
             </nav>
         </header>
         <main>
-            <nav>
+            <nav class="breadcrumb">
                 <a href="index.html">Home</a>
                 <span> / </span>
                 <a href="produkt.html">Products</a>
@@ -28,6 +42,11 @@
             </nav>
             <section class="products">
                 <h2>Products</h2>
+                <i class="fa-regular fa-filter" style="color: #ffffff;"></i>
+                <a href="#" class="square-button">Filter</a>
+                <a href="#" class="square-button">New &darr;</a>
+                <h3>All Products</h3>
+                <p>ProsSko offers a wide range of different shoes for every occasion. We have sports wear, dancing shoes, shoes for kids, men and women. We also offer pre used shoes for a low price.</p>
                 <article class="product-card">
                     <a href="produkt.html"><img src="img/shoe-506826_640.jpg" alt="Product image of Black women shoes"></a>
                     <h3>Black Velvet</h3>
@@ -76,6 +95,7 @@
                     <p>Bouncy running shoes</p>
                     <p class="price">$29.99</p>
                 </article>
+                <a href="#" class="button"> More </a>
             </section>
         </main>
         <footer>
@@ -87,22 +107,10 @@
             <section>
                 <h3>About us</h3>
                 <ul>
-                    <li>
-                        <h4>Customer Club</h4>
-                        <a href="#"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
-                    </li>
-                    <li>
-                        <h4>Privacy Policy</h4>
-                        <a href="#"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
-                    </li>
-                    <li>
-                        <h4>Purchase Terms</h4>
-                        <a href="#"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
-                    </li>
-                    <li>
-                        <h4>Frequently Asked Questions</h4>
-                        <a href="#"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
-                    </li>
+                    <li><a href="#">Customer Club<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
+                    <li><a href="#">Privacy Policy<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
+                    <li><a href="#">Purchase Terms<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
+                    <li><a href="#">Frequently Asked Questions<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
                 </ul>
             </section>
             <section>
@@ -126,5 +134,18 @@
             <button class="cookies"><i class="fa-solid fa-cookie-bite fa-2xl" style="color: #000000;"></i></button>
             <button class="contact"><i class="fa-solid fa-message fa-2xl" style="color: #000000;"></i></button>
         </footer>
+        <script>
+
+            let x = document.querySelector(".navbar")
+            
+            document.getElementById("meny").addEventListener("click", (e) => {
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+
+        </script>
     </body>
 </html>

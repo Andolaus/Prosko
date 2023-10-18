@@ -4,70 +4,58 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css\font\fontawesome-free-6.4.2-web\css\fontawesome.css" rel="stylesheet">
+        <link href="css\font\fontawesome-free-6.4.2-web\css\brands.css" rel="stylesheet">
+        <link href="css\font\fontawesome-free-6.4.2-web\css\solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <script src="https://kit.fontawesome.com/da63b81e86.js" crossorigin="anonymous"></script>
-        <title>Prosko</title>
+        <title>ProSko Login Site</title>
     </head>
     <body>
-        <header>            
+        <header>
             <nav>
-                <i class="fa-solid fa-bars" style="color: #000000;"></i>
-                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-                <a href="#" id="logo">Logo</a>
-                <i class="fa-solid fa-user" style="color: #000000;"></i>
-                <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                <a href="index.html" id="logo">ProSko</a>
+                <div>
+                    <i id="meny" class="fa-solid fa-bars" style="color: #000000;"></i>
+                    <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                    <i class="fa-solid fa-user" style="color: #000000;"></i>
+                    <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                </div>
+                <ul class="navbar">
+                    <li><a href="index.html">ProSko</a></li>
+                    <li><a href="login.html">Close</a></li>
+                    <li><a href="produkt.html">Woman</a></li>
+                    <li><a href="produkt.html">Men</a></li>
+                    <li><a href="produkt.html">Children</a></li>
+                    <li><a href=#>Brands</a></li>
+                    <li><a href=#>Accessories</a></li>
+                    <li><a href="login.html">Customer club</a></li>
+                </ul>
             </nav>
-            <img src="img/alexis-chloe-FcgxMCkjwEo-unsplash.jpg" alt="Image of a woman sitting on the grpping-texto>und with her legs crossed">
-            <span class="overlapping-text">Tekst over bilde</span>
-            <button class="button">See our products &rarr;</button> 
         </header>
         <main>
-            <section>
-                <h1>ProSko</h1>
-                <article>
-                    <h2>Women</h2>
-                    <img src="img/franco-figueroa-bHrnn1h_5YY-unsplash.jpg" alt="Image category for women">
-                    <button class="button">See our products &rarr;</button> 
-                </article>
-                <article>
-                    <h2>Men</h2>
-                    <img src="img/wieger-stienstra-t2LACMcVNgA-unsplash.jpg" alt="Image category for men">
-                    <button class="button">See our products &rarr;</button> 
-                </article>
-                <article>
-                    <h2>Children</h2>
-                    <img src="img/chris-hardy-1JHDnBniINE-unsplash.jpg" alt="Image category for kids">
-                    <span class="overlapping-text">Tekst over bilde</span>
-                    <button class="button">See our products &rarr;</button> 
-                </article>
-            </section>
-            <section>
-                <h3>Brands</h3>
-                <ul class="brands">
-                    <li>
-                        <img src="img/adidas-311450_640.jpg" alt="Brand image">
-                    </li>
-                    <li>
-                        <img src="img/animal-2028258_640.jpg" alt="Brand image">
-                    </li>
-                    <li>
-                        <img src="img/black-307583_640.jpg" alt="Brand image">
-                    </li>
-                    <li>
-                        <img src="img/fire-303309_640.jpg" alt="Brand Image">
-                    </li>
-                    <li>
-                        <img src="img/silhouette-3313481_640.jpg" alt="Brand Image">
-                    </li>
-                    <li>
-                        <img src="img/w-2538524_640.jpg" alt="Brand image">
-                    </li>
+            <form class="login-container">
+                <h1>Sign in</h1>
+                <p>New customer? <a href="#">Create Account</a></p>
+                <label for="Email">Email*</label>
+                <input type="text" placeholder="Email" name="Email" required>
+                <label for="Password">Password*</label>
+                <input type="password" placeholder="Password" name="Password" required>
+                <button type="submit">Login</button>
+                <p><a href="#">Forgot password?</a></p>
+                <p>Or log in with</p>
+            </form>
+            <i class="fa-brands fa-facebook fa-2xl" style="color: #000000;"></i>
+            <i class="fa-brands fa-google fa-2xl" style="color: #000000;"></i>
+            <section class="membership-benefits">
+                <h2>Membership benefits</h2>
+                <ul>
+                    <li><a href="#">Coupons & discounts<i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a href="#">Weekly newsletters<i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a href="#">Exclusive access to our podcast<i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a href="#">Design your own shoes<i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a href="#">Contests<i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a href="#">Online courses<i class="fa-solid fa-arrow-right"></i></a></li>
                 </ul>
-            </section>
-            <section class="products">
-                <h3>Products</h3>
-                <img src="img/shoe-506826_640.jpg" alt="Product image of Black women shoes">
-                <img src="img/shoe-629643_640.jpg" alt="Product image of sports shoes">
             </section>
         </main>
         <footer>
@@ -79,22 +67,10 @@
             <section>
                 <h3>About us</h3>
                 <ul>
-                    <li>
-                        <h4>Customer Club</h4>
-                        <a href="#"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
-                    </li>
-                    <li>
-                        <h4>Privacy Policy</h4>
-                        <a href="#"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
-                    </li>
-                    <li>
-                        <h4>Purchase Terms</h4>
-                        <a href="#"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
-                    </li>
-                    <li>
-                        <h4>Frequently Asked Questions</h4>
-                        <a href="#"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
-                    </li>
+                    <li><a href="#">Customer Club<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
+                    <li><a href="#">Privacy Policy<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
+                    <li><a href="#">Purchase Terms<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
+                    <li><a href="#">Frequently Asked Questions<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
                 </ul>
             </section>
             <section>
@@ -118,5 +94,18 @@
             <button class="cookies"><i class="fa-solid fa-cookie-bite fa-2xl" style="color: #000000;"></i></button>
             <button class="contact"><i class="fa-solid fa-message fa-2xl" style="color: #000000;"></i></button>
         </footer>
+        <script>
+
+            let x = document.querySelector(".navbar")
+            
+            document.getElementById("meny").addEventListener("click", (e) => {
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+
+        </script>
     </body>
 </html>

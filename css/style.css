@@ -1,3 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    padding: 1rem;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-area: header;
+
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+header nav div {
+    display: flex;
+    gap: 1rem;
+}
 
 nav {
     position: fixed;
@@ -13,8 +48,32 @@ nav {
 
 }
 
-header {
-    border-bottom: 1px solid rgb(176, 169, 169);
+.navbar {
+    display: none;
+}
+
+.responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.responsive a {
+    color: white;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+
+}
+
+main {
+    grid-area: main;
 }
 
 .cookies {
@@ -37,6 +96,7 @@ header {
 
 footer {
     background-color: gray;
+    grid-area: footer;
 }
 
 .button { 
@@ -48,3 +108,21 @@ footer {
     color: white; 
     font-size: 20px; 
 } 
+
+.square-button {
+    background-color: black;
+    height: 80px;
+    width: 400px;
+    color: white;
+    font-size: 20;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    max-width: 250px;
+    margin-left: 10px;
+}
+
