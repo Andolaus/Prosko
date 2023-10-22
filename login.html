@@ -4,26 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
-        <link href="css\font\fontawesome-free-6.4.2-web\css\fontawesome.css" rel="stylesheet">
-        <link href="css\font\fontawesome-free-6.4.2-web\css\brands.css" rel="stylesheet">
-        <link href="css\font\fontawesome-free-6.4.2-web\css\solid.css" rel="stylesheet">
+        <link href="css/font/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+        <link href="css/font/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>ProSko Login Site</title>
+        <title>ProSko Nettbutikk</title>
     </head>
     <body>
         <div id="grid-container">
-            <header>
+            <header>            
                 <nav>
-                    <a href="index.html" id="logo">ProSko</a>
                     <div>
-                        <i id="meny" class="fa-solid fa-bars" style="color: #000000;"></i>
-                        <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-                        <i class="fa-solid fa-user" style="color: #000000;"></i>
-                        <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                        <i id="meny" class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+                        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i>
+                        <a class="logo" href="index.html" id="logo">ProSko</a>
+                        <a href="login.html"><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i></a>
+                        <i class="fa-solid fa-cart-shopping fa-xl" style="color: #000000;"></i>
                     </div>
                     <ul class="navbar">
                         <li><a href="index.html">ProSko</a></li>
-                        <li><a href="login.html">Close</a></li>
+                        <li><a href="index.html">Close</a></li>
                         <li><a href="produkt.html">Woman</a></li>
                         <li><a href="produkt.html">Men</a></li>
                         <li><a href="produkt.html">Children</a></li>
@@ -32,6 +32,11 @@
                         <li><a href="login.html">Customer club</a></li>
                     </ul>
                 </nav>
+                <section>
+                    <img class="header-image" src="img/alexis-chloe-FcgxMCkjwEo-unsplash.jpg" alt="Image of a woman sitting on the ground with her legs crossed">
+                    <span class="header-text">Welcome to ProSko</span>
+                    <a href="produkt.html" class="header-button">See our products &rarr;</a>
+                </section>
             </header>
             <main>
                 <form class="login-container">
@@ -60,40 +65,44 @@
                 </section>
             </main>
             <footer>
-                <section>
-                    <h1>Prosko</h1>
-                    <p>Welcome to our online store! ProSko is an e-commerce platform that specializes in footwear for people of all ages. Our mission is to offer a pair of shoes for every individual. We provide a diverse range of options, from premium brands like Bugatti and Timberland to more budget-friendly choices such as Adidas and Nike. Our selection is continually expanding, with new products being added regularly.</p>
-                    <p>In partnership with environmental organizations, we sell both new and used shoes to reduce our environmental footprint. Additionally, we package all our shoes in eco-friendly materials. At ProSko, we offer free shipping on orders over $100 and have a hassle-free return policy in case you're not satisfied with your purchase. Thank you for choosing ProSko for all your footwear needs!</p>
-                </section>
-                <section>
-                    <h3>About us</h3>
-                    <ul>
-                        <li><a href="#">Customer Club<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
-                        <li><a href="#">Privacy Policy<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
-                        <li><a href="#">Purchase Terms<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
-                        <li><a href="#">Frequently Asked Questions<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Follow us</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-twitter" style="color: #000000;"></i></li>
-                        <li><i class="fa-brands fa-instagram" style="color: #000000;"></i></li>
-                        <li><i class="fa-brands fa-facebook" style="color: #000000;"></i></li>
-                        <li><i class="fa-brands fa-tiktok" style="color: #000000;"></i></li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Payment Methods</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-paypal" style="color: #000000;"></i></li>
-                        <li><i class="fa-brands fa-stripe" style="color: #000000;"></i></li>
-                        <li><i class="fa-brands fa-cc-visa" style="color: #000000;"></i></li>
-                        <li><i class="fa-brands fa-cc-mastercard" style="color: #000000;"></i></li>
-                    </ul>
-                </section>
-                <button class="cookies"><i class="fa-solid fa-cookie-bite fa-2xl" style="color: #000000;"></i></button>
-                <button class="contact"><i class="fa-solid fa-message fa-2xl" style="color: #000000;"></i></button>
+                <div class="flex-container">
+                    <section class="footer-information">
+                        <h1>Prosko</h1>
+                        <p>Welcome to our online store! ProSko is an e-commerce platform that specializes in footwear for people of all ages. Our mission is to offer a pair of shoes for every individual. We provide a diverse range of options, from premium brands like Bugatti and Timberland to more budget-friendly choices such as Adidas and Nike. Our selection is continually expanding, with new products being added regularly.</p>
+                        <p>In partnership with environmental organizations, we sell both new and used shoes to reduce our environmental footprint. Additionally, we package all our shoes in eco-friendly materials. At ProSko, we offer free shipping on orders over $100 and have a hassle-free return policy in case you're not satisfied with your purchase. Thank you for choosing ProSko for all your footwear needs!</p>
+                    </section>
+                    <div class="about-follow-container">
+                        <section class="about-us">
+                            <h3>About us</h3>
+                            <ul>
+                                <li><a href="#">Customer Club</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Purchase Terms</a></li>
+                                <li><a href="#">Frequently Asked Questions</a></li>
+                            </ul>
+                        </section>
+                        <section class="follow-us">
+                            <h3>Follow us</h3>
+                            <ul class="follow-icons">
+                                <li><i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i></li>
+                                <li><i class="fa-brands fa-instagram fa-2xl" style="color: #000000;"></i></li>
+                                <li><i class="fa-brands fa-facebook fa-2xl" style="color: #000000;"></i></li>
+                                <li><i class="fa-brands fa-tiktok fa-2xl" style="color: #000000;"></i></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <section class="payment">
+                        <h3>Payment Methods</h3>
+                        <ul class="payment-icons">
+                            <li><i class="fa-brands fa-paypal fa-2xl" style="color: #000000;"></i></li>
+                            <li><i class="fa-brands fa-stripe fa-2xl" style="color: #000000;"></i></li>
+                            <li><i class="fa-brands fa-cc-visa fa-2xl" style="color: #000000;"></i></li>
+                            <li><i class="fa-brands fa-cc-mastercard fa-2xl" style="color: #000000;"></i></li>
+                        </ul> 
+                    </section>
+                    <button class="cookies"><i class="fa-solid fa-cookie-bite fa-2xl" style="color: #000000;"></i></button>
+                    <button class="contact"><i class="fa-solid fa-message fa-2xl" style="color: #000000;"></i></button>
+                </div>
             </footer>
         </div>
         <script>

@@ -47,7 +47,7 @@ header nav {
 
 header nav div {
     display: flex;
-    gap: 5.4rem;
+    gap: 5rem;
 }
 
 .fa-xl {
@@ -119,7 +119,14 @@ nav {
     display: inline-block;
     padding: 1rem;
     text-decoration: none;
+}
 
+.breadcrumb {
+    margin-top: 13%;
+    display: flex;
+    gap: 1%;
+    margin-left: -6%;
+    font-size: 74%;
 }
 
 main {
@@ -129,6 +136,10 @@ main {
 a {
     text-decoration: none;
     color: black;
+}
+
+.blue-text {
+    color: blue;
 }
 
 .welcome {
@@ -212,6 +223,25 @@ article {
     font-weight: 600;
 }
 
+.more-container {
+    display: flex;
+    justify-content: center;
+}
+
+.more-button {
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0);
+    height: 34px;
+    width: 82px;
+    color: whitesmoke;
+    font-size: 26px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
 .brands {
     display: flex;
     flex-wrap: wrap;
@@ -223,29 +253,41 @@ article {
     flex-wrap: wrap;
     justify-content: center; 
 }
+
  .brands li {
     width: 20%
  }
 
-
-
 .product-card {
     display: flex;
-    flex-direction: column;
-    justify-items: center;
-    justify-content: center;
-    border: solid 2px black;
-    width: 300px;
-    height: 349px;
-    margin-left: 27%;
-    margin-bottom: 5%;
-    margin-top: 4%;
+    border: solid 1.5px #d2cdcd;
+    width: 321px;
+    height: 308px;
+    flex: 1;
 }
 
-.products h2 {
+.products {
+    flex-wrap: wrap;
     display: flex;
-    justify-content: center;
+    gap: 81px;
+    margin: 38px;
+  }
+
+
+.products p {
+    font-size: 17px;
+    margin-block: auto;
+    text-align: center;
 }
+
+.all-products {
+    font-size: 37px;
+}
+
+.p-information {
+    font-size: 64%;
+}
+
 
 .product-card img {
     width: 150px; 
@@ -273,14 +315,76 @@ article {
 footer {
     background-color: #eedfdf;
     grid-area: footer;
+    font-size: 21px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-follow-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    order: 2;
+}
+
+.footer-information {
+    flex-grow: 1;
+    flex-basis: 100%;
+    order: 1;
+    border: solid 2px;
+}
+
+.about-us {
+    flex-grow: 1;
+    flex-basis: 50%;
+    order: 2;
+    border: solid 2px;
+}
+
+.follow-us {
+    flex-grow: 1;
+    flex-basis: 50%;
+    order: 3;
+    border: solid 2px;
+}
+
+.follow-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+}
+
+.payment {
+    border: solid 2px;
+    flex-grow: 1;
+    flex-basis: 100%;
+    order: 4;
+}
+
+.payment-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 132px;
+}
+
+.square-container {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    top: 1%;
 }
 
 .square-button {
     background-color: black;
-    height: 80px;
-    width: 400px;
+    height: 36px;
     color: white;
-    font-size: 20;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;   
 }
 
 .login-container {

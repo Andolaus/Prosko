@@ -4,26 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
-        <link href="css\font\fontawesome-free-6.4.2-web\css\fontawesome.css" rel="stylesheet">
-        <link href="css\font\fontawesome-free-6.4.2-web\css\brands.css" rel="stylesheet">
-        <link href="css\font\fontawesome-free-6.4.2-web\css\solid.css" rel="stylesheet">
+        <link href="css/font/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+        <link href="css/font/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>ProSko Products</title>
+        <title>ProSko Nettbutikk</title>
     </head>
     <body>
         <div id="grid-container">
-            <header>
+            <header>            
                 <nav>
-                    <a href="index.html" id="logo">ProSko</a>
                     <div>
-                        <i id="meny" class="fa-solid fa-bars" style="color: #000000;"></i>
-                        <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-                        <i class="fa-solid fa-user" style="color: #000000;"></i>
-                        <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                        <i id="meny" class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+                        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i>
+                        <a class="logo" href="index.html" id="logo">ProSko</a>
+                        <a href="login.html"><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i></a>
+                        <i class="fa-solid fa-cart-shopping fa-xl" style="color: #000000;"></i>
                     </div>
                     <ul class="navbar">
                         <li><a href="index.html">ProSko</a></li>
-                        <li><a href="produkt.html">Close</a></li>
+                        <li><a href="index.html">Close</a></li>
                         <li><a href="produkt.html">Woman</a></li>
                         <li><a href="produkt.html">Men</a></li>
                         <li><a href="produkt.html">Children</a></li>
@@ -32,22 +32,22 @@
                         <li><a href="login.html">Customer club</a></li>
                     </ul>
                 </nav>
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span> / </span></li>
+                    <li><a href="produkt.html">Products</a></li>
+                    <li><span> / </span></li>
+                    <li><span class="blue-text">All products</span></li>
+                </ul>
+                <h1 class="all-products">All Products</h1>
+                <p class="p-information">ProSko offers a wide range of different shoes for every occasion. We have sports wear, dancing shoes, shoes for kids, men and women. We also offer pre used shoes for a low price.</p>
+                <article class="square-container">
+                    <a href="#" class="square-button">Filter</a>
+                    <a href="#" class="square-button">New</a>
+                </article>
             </header>
             <main>
-                <nav class="breadcrumb">
-                    <a href="index.html">Home</a>
-                    <span> / </span>
-                    <a href="produkt.html">Products</a>
-                    <span> / </span>
-                    <span>Shoes</span>
-                </nav>
                 <section class="products">
-                    <h2>Products</h2>
-                    <i class="fa-regular fa-filter" style="color: #ffffff;"></i>
-                    <a href="#" class="square-button">Filter</a>
-                    <a href="#" class="square-button">New &darr;</a>
-                    <h3>All Products</h3>
-                    <p>ProsSko offers a wide range of different shoes for every occasion. We have sports wear, dancing shoes, shoes for kids, men and women. We also offer pre used shoes for a low price.</p>
                     <article class="product-card">
                         <a href="produkt.html"><img src="img/shoe-506826_640.jpg" alt="Product image of Black women shoes"></a>
                         <h3>Black Velvet</h3>
@@ -61,8 +61,8 @@
                         <p class="price">$29.99</p>
                     </article>
                     <article class="product-card">
-                        <a href="produkt.html"><img src="img/childrens-shoes-687958_640.jpg" alt="Product image of Black women shoes"></a>
-                        <h3>Red label</h3>
+                        <a href="produkt.html"><img src="img/childrens-shoes-3104832_640.jpg" alt="Product image of Black women shoes"></a>
+                        <h3>Pink label</h3>
                         <p>Casual children shoes</p>
                         <p class="price">$20.99</p>
                     </article>
@@ -73,9 +73,9 @@
                         <p class="price">$9.99</p>
                     </article>
                     <article class="product-card">
-                        <a href="produkt.html"><img src="img/trendest-studio-XZ3EmAIWuz0-unsplash.jpg" alt="Product image of Black women shoes"></a>
-                        <h3>White Edge</h3>
-                        <p>Trendy white shoes</p>
+                        <a href="produkt.html"><img src="img/pink-shoes-589193_640.jpg" alt="Product image of Black women shoes"></a>
+                        <h3>Pink Edge</h3>
+                        <p>Trendy shoes</p>
                         <p class="price">$39.99</p>
                     </article>
                     <article class="product-card">
@@ -91,49 +91,103 @@
                         <p class="price">$25.99</p>
                     </article>
                     <article class="product-card">
-                        <a href="produkt.html"><img src="img/hipkicks-HcqA34-uWo4-unsplash.jpg" alt="Product image of sports shoes"></a>
-                        <h3>Hip Kicks</h3>
-                        <p>Shoes for kicking</p>
+                        <a href="produkt.html"><img src="img/black-shoes-589195_640.jpg" alt="Product image of sports shoes"></a>
+                        <h3>Black Gang</h3>
+                        <p>Dancing shoes</p>
                         <p class="price">$29.99</p>
                     </article>
-                    <a href="#" class="button"> More </a>
+                    <article class="product-card">
+                        <a href="produkt.html"><img src="img/shoe-506826_640.jpg" alt="Product image of Black women shoes"></a>
+                        <h3>Black Velvet</h3>
+                        <p>Elegant and comfy women shoes</p>
+                        <p class="price">$39.99</p>
+                    </article>
+                    <article class="product-card">
+                        <a href="produkt.html"><img src="img/shoe-629643_640.jpg" alt="Product image of sports shoes"></a>
+                        <h3>Merindo Green</h3>
+                        <p>Bouncy running shoes</p>
+                        <p class="price">$29.99</p>
+                    </article>
+                    <article class="product-card">
+                        <a href="produkt.html"><img src="img/childrens-shoes-3104832_640.jpg" alt="Product image of Black women shoes"></a>
+                        <h3>Pink label</h3>
+                        <p>Casual children shoes</p>
+                        <p class="price">$20.99</p>
+                    </article>
+                    <article class="product-card">
+                        <a href="produkt.html"><img src="img/shoe-1768809_640.jpg" alt="Product image of sports shoes"></a>
+                        <h3>Converse</h3>
+                        <p>Used Converse shoes</p>
+                        <p class="price">$9.99</p>
+                    </article>
+                    <article class="product-card">
+                        <a href="produkt.html"><img src="img/pink-shoes-589193_640.jpg" alt="Product image of Black women shoes"></a>
+                        <h3>Pink Edge</h3>
+                        <p>Trendy shoes</p>
+                        <p class="price">$39.99</p>
+                    </article>
+                    <article class="product-card">
+                        <a href="produkt.html"><img src="img/womens-shoes-178163_640.jpg" alt="Product image of sports shoes"></a>
+                        <h3>Gold Cat</h3>
+                        <p>Party shoes deluxe</p>
+                        <p class="price">$35.99</p>
+                    </article>
+                    <article class="product-card">
+                        <a href="produkt.html"><img src="img/running-shoe-371624_640.jpg" alt="Product image of Black women shoes"></a>
+                        <h3>Running Wild</h3>
+                        <p>Comfy running shoes</p>
+                        <p class="price">$25.99</p>
+                    </article>
+                    <article class="product-card">
+                        <a href="produkt.html"><img src="img/black-shoes-589195_640.jpg" alt="Product image of sports shoes"></a>
+                        <h3>Black Gang</h3>
+                        <p>Dancing shoes</p>
+                        <p class="price">$29.99</p>
+                    </article>
                 </section>
+                <aside class="more-container">
+                    <a href="#" class="more-button"> More </a>
+                </aside>
             </main>
             <footer>
-                <section>
-                    <h1>Prosko</h1>
-                    <p>Welcome to our online store! ProSko is an e-commerce platform that specializes in footwear for people of all ages. Our mission is to offer a pair of shoes for every individual. We provide a diverse range of options, from premium brands like Bugatti and Timberland to more budget-friendly choices such as Adidas and Nike. Our selection is continually expanding, with new products being added regularly.</p>
-                    <p>In partnership with environmental organizations, we sell both new and used shoes to reduce our environmental footprint. Additionally, we package all our shoes in eco-friendly materials. At ProSko, we offer free shipping on orders over $100 and have a hassle-free return policy in case you're not satisfied with your purchase. Thank you for choosing ProSko for all your footwear needs!</p>
-                </section>
-                <section>
-                    <h3>About us</h3>
-                    <ul>
-                        <li><a href="#">Customer Club<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
-                        <li><a href="#">Privacy Policy<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
-                        <li><a href="#">Purchase Terms<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
-                        <li><a href="#">Frequently Asked Questions<i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a></li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Follow us</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-twitter" style="color: #000000;"></i></li>
-                        <li><i class="fa-brands fa-instagram" style="color: #000000;"></i></li>
-                        <li><i class="fa-brands fa-facebook" style="color: #000000;"></i></li>
-                        <li><i class="fa-brands fa-tiktok" style="color: #000000;"></i></li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Payment Methods</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-paypal" style="color: #000000;"></i></li>
-                        <li><i class="fa-brands fa-stripe" style="color: #000000;"></i></li>
-                        <li><i class="fa-brands fa-cc-visa" style="color: #000000;"></i></li>
-                        <li><i class="fa-brands fa-cc-mastercard" style="color: #000000;"></i></li>
-                    </ul>
-                </section>
-                <button class="cookies"><i class="fa-solid fa-cookie-bite fa-2xl" style="color: #000000;"></i></button>
-                <button class="contact"><i class="fa-solid fa-message fa-2xl" style="color: #000000;"></i></button>
+                <div class="flex-container">
+                    <section class="footer-information">
+                        <h1>Prosko</h1>
+                        <p>Welcome to our online store! ProSko is an e-commerce platform that specializes in footwear for people of all ages. Our mission is to offer a pair of shoes for every individual. We provide a diverse range of options, from premium brands like Bugatti and Timberland to more budget-friendly choices such as Adidas and Nike. Our selection is continually expanding, with new products being added regularly.</p>
+                        <p>In partnership with environmental organizations, we sell both new and used shoes to reduce our environmental footprint. Additionally, we package all our shoes in eco-friendly materials. At ProSko, we offer free shipping on orders over $100 and have a hassle-free return policy in case you're not satisfied with your purchase. Thank you for choosing ProSko for all your footwear needs!</p>
+                    </section>
+                    <div class="about-follow-container">
+                        <section class="about-us">
+                            <h3>About us</h3>
+                            <ul>
+                                <li><a href="#">Customer Club</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Purchase Terms</a></li>
+                                <li><a href="#">Frequently Asked Questions</a></li>
+                            </ul>
+                        </section>
+                        <section class="follow-us">
+                            <h3>Follow us</h3>
+                            <ul class="follow-icons">
+                                <li><i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i></li>
+                                <li><i class="fa-brands fa-instagram fa-2xl" style="color: #000000;"></i></li>
+                                <li><i class="fa-brands fa-facebook fa-2xl" style="color: #000000;"></i></li>
+                                <li><i class="fa-brands fa-tiktok fa-2xl" style="color: #000000;"></i></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <section class="payment">
+                        <h3>Payment Methods</h3>
+                        <ul class="payment-icons">
+                            <li><i class="fa-brands fa-paypal fa-2xl" style="color: #000000;"></i></li>
+                            <li><i class="fa-brands fa-stripe fa-2xl" style="color: #000000;"></i></li>
+                            <li><i class="fa-brands fa-cc-visa fa-2xl" style="color: #000000;"></i></li>
+                            <li><i class="fa-brands fa-cc-mastercard fa-2xl" style="color: #000000;"></i></li>
+                        </ul> 
+                    </section>
+                    <button class="cookies"><i class="fa-solid fa-cookie-bite fa-2xl" style="color: #000000;"></i></button>
+                    <button class="contact"><i class="fa-solid fa-message fa-2xl" style="color: #000000;"></i></button>
+                </div>
             </footer>
         </div>
         <script>
