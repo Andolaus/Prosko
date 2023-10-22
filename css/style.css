@@ -8,6 +8,14 @@ h1 {
     font-size: 3.5rem;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
+.align-center {
+    text-align: center;
+}
+
 h3 {
     display: flex;
     justify-content: center;
@@ -258,6 +266,11 @@ article {
     width: 20%
  }
 
+ .h3-brands {
+    margin: 7%
+ }
+
+
 .product-card {
     display: flex;
     border: solid 1.5px #d2cdcd;
@@ -280,8 +293,20 @@ article {
     text-align: center;
 }
 
+.products h2 {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.h2-products {
+    margin: 1%;
+}
+
+
 .all-products {
     font-size: 37px;
+
 }
 
 .p-information {
@@ -334,31 +359,32 @@ footer {
     flex-grow: 1;
     flex-basis: 100%;
     order: 1;
-    border: solid 2px;
+    border: solid 1px;
 }
 
 .about-us {
     flex-grow: 1;
     flex-basis: 50%;
     order: 2;
-    border: solid 2px;
+    border: solid 1px;
 }
 
 .follow-us {
     flex-grow: 1;
     flex-basis: 50%;
     order: 3;
-    border: solid 2px;
+    border: solid 1px;
 }
 
 .follow-icons {
     display: flex;
     flex-direction: row;
     gap: 27px;
+    margin-top: 50px;
 }
 
 .payment {
-    border: solid 2px;
+    border: solid 1px;
     flex-grow: 1;
     flex-basis: 100%;
     order: 4;
@@ -387,12 +413,56 @@ footer {
     flex-basis: 50%;   
 }
 
+.login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 11px;
+    width: 232px;
+}
+
+.h1-sign-in {
+    font-size: 37px;
+    margin: 50px;
+}
+
 .login-container {
     display: flex;
     justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    max-width: 250px;
-    margin-left: 10px;
+    margin: 8%;
 }
 
+.forgot-password {
+    text-decoration: underline;
+    justify-content: center;
+    display: flex;
+}
+
+.login-icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.membership-benefits {
+    text-align: left;   
+}
+
+
+.membership-container {
+    display: flex;
+    justify-content: center;
+    margin: 52px;
+}
+
+.h2-membership {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.ul-benefits {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
