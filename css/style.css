@@ -289,7 +289,6 @@ article {
     margin: 38px;
   }
 
-
 .products p {
     font-size: 17px;
     margin-block: auto;
@@ -573,4 +572,17 @@ footer {
         gap: -1px;
         margin-right: -122px;
     }
+
+    .follow-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 135px;
+        margin-top: 50px;
+      }
+
+    .payment-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 346px;
+      }
 }
