@@ -274,6 +274,10 @@ article {
     margin: 7%
  }
 
+ .hidden-square-button {
+    display: hidden; 
+ }
+
 
 .product-card {
     display: flex;
@@ -537,6 +541,14 @@ footer {
         margin-top: 1%;
       }
 
+      .breadcrumb {
+        margin-top: 7%;
+        display: flex;
+        gap: 1%;
+        margin-left: -3%;
+        font-size: 74%;
+      }
+
     .header-image {
         width: 100%;
         padding-top: 1%
@@ -573,6 +585,31 @@ footer {
         margin-right: -122px;
     }
 
+    .login {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 11px;
+        width: 232px;
+        margin-top: -62px;
+      }
+
+    .fa-facebook {
+        font-size: 4rem;
+    }
+
+    .fa-google {
+        font-size: 4rem;
+    }
+
+    .login-icons {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 5rem;
+        margin: -3rem;
+    }
+
     .follow-icons {
         display: flex;
         flex-direction: row;
@@ -583,6 +620,27 @@ footer {
     .payment-icons {
         display: flex;
         flex-direction: row;
-        gap: 346px;
+        gap: 28%;
+      }
+
+      .membership-benefits {
+        text-align: left;
+        margin-top: 5rem;
+      }
+
+      .footer-information {
+        flex-grow: 1;
+        flex-basis: 100%;
+        order: 1;
+        border: solid 1px;
+        font-size: 1rem;
+      }
+
+      .about-us {
+        flex-grow: 1;
+        flex-basis: 50%;
+        order: 2;
+        border: solid 1px;
+        font-size: 1rem;
       }
 }
