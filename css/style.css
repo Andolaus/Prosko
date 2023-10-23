@@ -69,30 +69,6 @@ header nav div {
     padding-top: 46px;
 }
 
-.header-button {
-    cursor: pointer;
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0);
-    height: 28px;
-    width: 201px;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 44%;
-    left: 60%;
-    text-decoration: none;
-    text-align: center;
-}
-
-.header-text {
-    position: absolute;
-    top: 37%;
-    left: 36%;
-    width: 100%;
-    color: white;
-  }
-
-
 nav {
     background-color: rgb(255, 255, 255);
 }
@@ -172,67 +148,12 @@ article {
     width: 60%;
 }
 
-.women-button {
-    cursor: pointer;
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0);
-    height: 28px;
-    width: 201px;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 131%;
-    left: 60%;
-    text-decoration: none;
-    text-align: center;
-}
-
 .man-img {
     width: 60%;
 }
 
-.man-button {
-    cursor: pointer;
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0);
-    height: 28px;
-    width: 210px;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 210%;
-    left: 60%;
-    text-decoration: none;
-    text-align: center;
-}
-
 .child-img {
     width: 100%;
-}
-
-.children-button {
-    cursor: pointer;
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0);
-    height: 28px;
-    width: 210px;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 274%;
-    left: 60%;
-    text-decoration: none;
-    text-align: center;
-}
-
-.children-text {
-    position: absolute;
-    top: 269%;
-    left: 38%;
-    width: 100%;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
 }
 
 .more-container {
@@ -460,7 +381,6 @@ footer {
 .membership-benefits {
     text-align: left;   
 }
-
 
 .membership-container {
     display: flex;
