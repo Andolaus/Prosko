@@ -86,11 +86,11 @@ header nav div {
 
 .header-text {
     position: absolute;
-    top: 40%;
-    left: 57%;
+    top: 37%;
+    left: 36%;
     width: 100%;
     color: white;
-}
+  }
 
 
 nav {
@@ -278,6 +278,11 @@ article {
     display: hidden; 
  }
 
+.h2-products {
+    display: flex;
+    flex-basis: 100%;
+    order: 1;
+}
 
 .product-card {
     display: flex;
@@ -285,6 +290,7 @@ article {
     width: 321px;
     height: 308px;
     flex: 1;
+    order: 2;
 }
 .products {
     flex-wrap: wrap;
