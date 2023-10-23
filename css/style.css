@@ -50,7 +50,7 @@ header nav {
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
-    z-index: 99;
+    z-index: 98;
 }
 
 header nav div {
@@ -95,6 +95,10 @@ header nav div {
 
 nav {
     background-color: rgb(255, 255, 255);
+}
+
+.shipping {
+    display: none;
 }
 
 .logo {
@@ -278,7 +282,6 @@ article {
     height: 308px;
     flex: 1;
 }
-
 .products {
     flex-wrap: wrap;
     display: flex;
@@ -465,4 +468,109 @@ footer {
     display: flex;
     gap: 30px;
     flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+    #grid-container {
+        display: grid;
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .shipping {
+        display: flex;
+        background-color: #eedfdf;
+        font-size: 13px;
+        position: fixed;
+        z-index: 99;
+    }
+
+    .shipping-info {
+        display: flex;
+        flex-direction: row;
+        gap: 24rem;
+        margin: 0;
+        margin-right: 59px;
+    }
+    
+    #meny {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        list-style: none;
+        margin: 13px;
+        font-size: 23px;
+    }
+    .fa-xl {
+        font-size: 1.1em;
+        line-height: 2.042em;
+        vertical-align: -0.125em;
+      }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        z-index: 98;
+        margin-top: 0px;
+      }
+
+    nav {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .logo-nav {
+        display: flex;
+    }
+
+    .logo {
+        font-size: 39px;
+        font-weight: 700;
+        text-decoration: none;
+        color: black;
+        margin-top: 1%;
+      }
+
+    .header-image {
+        width: 100%;
+        padding-top: 1%
+      }
+
+    .index-products-container {
+        display: flex;
+        justify-content: center;
+        gap: 14rem;
+    }
+    .welcome {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .child-img {
+        width: 50%;
+    }
+
+    .man-img {
+        width: 100%;
+    }
+
+    .women-img {
+        width: 97%;
+    }
+
+    .brands {
+        display: flex;
+        flex-wrap: wrap;
+        gap: -1px;
+        margin-right: -122px;
+    }
 }

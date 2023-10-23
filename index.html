@@ -11,10 +11,17 @@
         <title>ProSko Nettbutikk</title>
     </head>
     <body>
+        <nav class="shipping">
+            <ul class="shipping-info">
+                <li><a href="#">30 days return policy</a></li>
+                <li><a href="#">Free Shipping over $100</a></li>
+                <li><a href="#">Home delivery in 2-6 days</a></li>
+            </ul>
+        </nav>    
         <div id="grid-container">
-            <header>            
+            <header>       
                 <nav>
-                    <div>
+                    <div class="logo-nav">
                         <i id="meny" class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
                         <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i>
                         <a class="logo" href="index.html" id="logo">ProSko</a>
@@ -22,8 +29,6 @@
                         <i class="fa-solid fa-cart-shopping fa-xl" style="color: #000000;"></i>
                     </div>
                     <ul class="navbar">
-                        <li><a href="index.html">ProSko</a></li>
-                        <li><a href="index.html">Close</a></li>
                         <li><a href="produkt.html">Woman</a></li>
                         <li><a href="produkt.html">Men</a></li>
                         <li><a href="produkt.html">Children</a></li>
@@ -41,41 +46,33 @@
             <main>
                 <section>
                     <h4 class="welcome">Welcome to our online store</h4>
-                    <article>
-                        <h2><a href="produkt.html">Women</a></h2>
-                        <img class="women-img" src="img/franco-figueroa-bHrnn1h_5YY-unsplash.jpg" alt="Image category for women">
-                        <a href="produkt.html" class="women-button">See our products &rarr;</a>
-                    </article>
-                    <article>
-                        <h2><a href="produkt.html">Men</a></h2>
-                        <img class="man-img" src="img/wieger-stienstra-t2LACMcVNgA-unsplash.jpg" alt="Image category for men">
-                        <a href="produkt.html" class="man-button">See our products &rarr;</a> 
-                    </article>
-                    <article>
-                        <h2><a href="produkt.html">Children</a></h2>
-                        <img class="child-img" src="img/chris-hardy-1JHDnBniINE-unsplash.jpg" alt="Image category for kids">
-                        <span class="children-text">We have the new summer shoes!</span>
-                        <a href="produkt.html" class="children-button">Browse our products &rarr;</a> 
-                    </article>
+                    <aside class="index-products-container">
+                        <article>
+                            <h2><a href="produkt.html">Women</a></h2>
+                            <img class="women-img" src="img/franco-figueroa-bHrnn1h_5YY-unsplash.jpg" alt="Image category for women">
+                            <a href="produkt.html" class="women-button">See our products &rarr;</a>
+                        </article>
+                        <article>
+                            <h2><a href="produkt.html">Men</a></h2>
+                            <img class="man-img" src="img/wieger-stienstra-t2LACMcVNgA-unsplash.jpg" alt="Image category for men">
+                            <a href="produkt.html" class="man-button">See our products &rarr;</a> 
+                        </article>
+                    </aside>
+                        <article>
+                            <h2><a href="produkt.html">Children</a></h2>
+                            <img class="child-img" src="img/chris-hardy-1JHDnBniINE-unsplash.jpg" alt="Image category for kids">
+                            <span class="children-text">We have the new summer shoes!</span>
+                            <a href="produkt.html" class="children-button">Browse our products &rarr;</a> 
+                        </article>
                 </section>
                 <section>
                     <h3 class="h3-brands">Brands</h3>
                     <ul class="brands">
-                        <li>
-                            <img src="img/adidas-311450_640.jpg" alt="Brand image">
-                        </li>
-                        <li>
-                            <img src="img/animal-2028258_640.jpg" alt="Brand image">
-                        </li>
-                        <li>
-                            <img src="img/black-307583_640.jpg" alt="Brand image">
-                        </li>
-                        <li>
-                            <img src="img/fire-303309_640.jpg" alt="Brand Image">
-                        </li>
-                        <li>
-                            <img src="img/silhouette-3313481_640.jpg" alt="Brand Image">
-                        </li>
+                        <li><img src="img/adidas-311450_640.jpg" alt="Brand image"></li>
+                        <li><img src="img/animal-2028258_640.jpg" alt="Brand image"></li>
+                        <li><img src="img/black-307583_640.jpg" alt="Brand image"></li>
+                        <li><img src="img/fire-303309_640.jpg" alt="Brand Image"></li>
+                        <li><img src="img/silhouette-3313481_640.jpg" alt="Brand Image"></li>
                     </ul>
                 </section>
                 <section class="products">
@@ -91,6 +88,18 @@
                         <h3>Merindo green</h3>
                         <p>Bouncy running shoes</p>
                         <p class="price">$29.99</p>
+                    </article>
+                    <article class="product-card">
+                        <a href="produkt.html"><img src="img/childrens-shoes-3104832_640.jpg" alt="Product image of Black women shoes"></a>
+                        <h3>Pink label</h3>
+                        <p>Casual children shoes</p>
+                        <p class="price">$20.99</p>
+                    </article>
+                    <article class="product-card">
+                        <a href="produkt.html"><img src="img/shoe-1768809_640.jpg" alt="Product image of sports shoes"></a>
+                        <h3>Converse</h3>
+                        <p>Used Converse shoes</p>
+                        <p class="price">$9.99</p>
                     </article>
                 </section>
             </main>
