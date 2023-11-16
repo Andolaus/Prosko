@@ -3,29 +3,59 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="ProSko shoe store offers a wide variety of products, including women's, 
+        men's, and children's shoes. We have shoes for every occasion, such as running, dancing, winter shoes, and more.
+        Additionally, if you need comfortable and relaxing shoes, we have those too!">
+        <meta name="author" content="Andreas Olaussen">
+
+        <!-- Meta for Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="ProSko - Products that we offer!">
+        <meta property="og:description" content="ProSko shoe store offers a wide variety of products, including women's, 
+        men's, and children's shoes. We have shoes for every occasion, such as running, dancing, winter shoes, and more.
+        Additionally, if you need comfortable and relaxing shoes, we have those too!">
+        <meta property="og:image" content="img/alexis-chloe-FcgxMCkjwEo-unsplash.jpg">
+        <meta property="og:url" content="https://itstud.hiof.no/~andreabo/oblig4/produkt.html">
+
+        <!-- Meta for Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="ProSko - Products that we offer!">
+        <meta name="twitter:description" content="ProSko shoe store offers a wide variety of products, including women's, 
+        men's, and children's shoes. We have shoes for every occasion, such as running, dancing, winter shoes, and more.
+        Additionally, if you need comfortable and relaxing shoes, we have those too!">
+        <meta name="twitter:image" content="img/alexis-chloe-FcgxMCkjwEo-unsplash.jpg">
+        <meta name="twitter:url" content="https://itstud.hiof.no/~andreabo/oblig4/produkt.html">
+
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/font/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
         <link href="css/font/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>ProSko Nettbutikk</title>
+        <title>ProSko - Products that we offer!</title>
     </head>
     <body>
+        <a href="#main" class="skip" aria-label="Skip to main content">Skip to main content</a>
         <nav class="shipping">
             <ul class="shipping-info">
                 <li><a href="#">30 days return policy</a></li>
                 <li><a href="#">Free Shipping over $100</a></li>
                 <li><a href="#">Home delivery in 2-6 days</a></li>
             </ul>
-        </nav> 
+        </nav>    
         <div id="grid-container">
-            <header>            
+            <header>       
                 <nav>
-                    <div>
-                        <i id="meny" class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
-                        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i>
-                        <a class="logo" href="index.html" id="logo">ProSko</a>
-                        <a href="login.html"><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i></a>
+                    <div class="logo-nav">
+                        <i id="meny" class="fa-solid fa-bars fa-xl" style="color: #000000;" role="button" aria-label="open menu"></i>
+                        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;" aria-label="search"></i>
+                        <a class="logo" href="index.html" id="logo" aria-label="prosko homepage">ProSko</a>
+                        <a href="login.html">
+                            <span aria-hidden="true">
+                            <i class="fa-solid fa-user fa-xl" style="color: #000000;" aria-label="shopping cart"></i>
+                            </span>
+                            <span class="sr-only">Go to login site</span>
+                        </a>
                         <i class="fa-solid fa-cart-shopping fa-xl" style="color: #000000;"></i>
                     </div>
                     <ul class="navbar">
@@ -35,201 +65,235 @@
                         <li><a href=#>Brands</a></li>
                         <li><a href=#>Accessories</a></li>
                         <li><a href="login.html">Customer club</a></li>
+                        <li><a href="analyse.html">Analyse</a></li>
                     </ul>
                 </nav>
-                <ul class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
+                <ul class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                      <a itemprop="item" href="index.html">
+                        <span itemprop="name">Home</span></a>
+                      <meta itemprop="position" content="1">
+                    </li> 
                     <li><span> / </span></li>
-                    <li><a href="produkt.html">Products</a></li>
+                    <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                      <a itemprop="item" href="produkt.html">
+                        <span itemprop="name">Products</span></a>
+                      <meta itemprop="position" content="2">
+                    </li>
                     <li><span> / </span></li>
-                    <li><span class="blue-text">All products</span></li>
+                    <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem"><span itemprop="name" class="blue-text">All products</span>
+                    <meta itemprop="position" content="3">
+                    </li>
                 </ul>
                 <h1 class="all-products">All Products</h1>
                 <p class="p-information">ProSko offers a wide range of different shoes for every occasion. We have sports wear, dancing shoes, shoes for kids, men and women. We also offer pre used shoes for a low price.</p>
                 <aside class="square-container">
-                    <a href="#" class="square-button">Colour</a>
-                    <a href="#" class="square-button">Size</a>
-                    <a href="#" class="square-button">Brand</a>
+                    <a href="#" class="square-button" role="button">Colour</a>
+                    <a href="#" class="square-button" role="button">Size</a>
+                    <a href="#" class="square-button" role="button">Brand</a>
                 </aside>
             </header>
-            <main>
-                <section class="products">
+            <main id="main">
+                <section itemscope itemtype="http://schema.org/ItemList" class="products">
                     <h2 class="h2-products">Product list:</h2>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/shoe-506826_640.jpg" alt="Product image of Black women shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/shoe-506826_640.jpg" alt="Product - Black women shoes with high heels" itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/sko-h%C3%A6l-mote-bootee-506826/ -->
-                        <h3>Black Velvet</h3>
-                        <p>Elegant and comfy women shoes</p>
-                        <p class="price">$39.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Black Velvet</h3>
+                        <p itemprop="description">Elegant and comfy women shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">39.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/shoe-629643_640.jpg" alt="Product image of sports shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/shoe-629643_640.jpg" alt="Product - green sport shoes." itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/sko-sportssko-l%C3%B8ype-sport-l%C3%B8ping-629643/ -->
-                        <h3>Merindo Green</h3>
-                        <p>Bouncy running shoes</p>
-                        <p class="price">$29.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Merindo Green</h3>
+                        <p itemprop="description">Bouncy running shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">29.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/childrens-shoes-3104832_640.jpg" alt="Product image of pink child shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/childrens-shoes-3104832_640.jpg" alt="Product - pink children shoes without shoelaces." itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/barnesko-materiale-liten-sko-3104832/ -->
-                        <h3>Pink label</h3>
-                        <p>Casual children shoes</p>
-                        <p class="price">$20.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Pink label</h3>
+                        <p itemprop="description">Casual children shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">20.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/shoe-1768809_640.jpg" alt="Product image of used converse shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/shoe-1768809_640.jpg" alt="Product - A pair of used converse shoes that looks used and dirty" itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/sko-gammel-gamle-sko-brukt-1768809/ -->
-                        <h3>Converse</h3>
-                        <p>Used Converse shoes</p>
-                        <p class="price">$9.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Converse</h3>
+                        <p itemprop="description">Used Converse shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">9.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/pink-shoes-589193_640.jpg" alt="Product image of trendy pink shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/pink-shoes-589193_640.jpg" alt="Product - Trendy pink shoes" itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/rosa-sko-sko-h%C3%B8ye-h%C3%A6ler-pumpe-589193/ -->
-                        <h3>Pink Edge</h3>
-                        <p>Trendy shoes</p>
-                        <p class="price">$39.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Pink Edge</h3>
+                        <p itemprop="description">Trendy shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">39.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/womens-shoes-178163_640.jpg" alt="Product image of female party shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/womens-shoes-178163_640.jpg" alt="Product - Female party shoes for dancing" itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/kvinners-sko-pin-mote-h%C3%B8y-178163/ -->
-                        <h3>Gold Cat</h3>
-                        <p>Party shoes deluxe</p>
-                        <p class="price">$35.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Gold Cat</h3>
+                        <p itemprop="description">Party shoes deluxe</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">35.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/running-shoe-371624_640.jpg" alt="Product image of running shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/running-shoe-371624_640.jpg" alt="Product - pink running shoes for indoor and outdoor." itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/l%C3%B8pesko-sko-brooks-371624/ -->
-                        <h3>Running Wild</h3>
-                        <p>Comfy running shoes</p>
-                        <p class="price">$25.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Running Wild</h3>
+                        <p itemprop="description">Comfy running shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">25.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/black-shoes-589195_640.jpg" alt="Product image of black dancing shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/black-shoes-589195_640.jpg" alt="Product-  Black shiny dancing shoes" itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/svarte-sko-sko-pen-sko-pumpe-589195/ -->
-                        <h3>Black Gang</h3>
-                        <p>Dancing shoes</p>
-                        <p class="price">$29.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Black Gang</h3>
+                        <p itemprop="description">Dancing shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">29.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/shoe-506826_640.jpg" alt="Product image of Black women shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/shoe-506826_640.jpg" alt="Product - Black velvet women shoes with high heels" itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/sko-h%C3%A6l-mote-bootee-506826/ -->
-                        <h3>Black Velvet</h3>
-                        <p>Elegant and comfy women shoes</p>
-                        <p class="price">$39.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Black Velvet</h3>
+                        <p itemprop="description">Elegant and comfy women shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">39.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/shoe-629643_640.jpg" alt="Product image of sports shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/shoe-629643_640.jpg" alt="Product - green sport running shoes." itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/sko-sportssko-l%C3%B8ype-sport-l%C3%B8ping-629643/ -->
-                        <h3>Merindo Green</h3>
-                        <p>Bouncy running shoes</p>
-                        <p class="price">$29.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Merindo Green</h3>
+                        <p itemprop="description">Bouncy running shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">29.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/childrens-shoes-3104832_640.jpg" alt="Product image of pink child shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/childrens-shoes-3104832_640.jpg" alt="Product - pink shoes for children without shoelaces." itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/barnesko-materiale-liten-sko-3104832/ -->
-                        <h3>Pink label</h3>
-                        <p>Casual children shoes</p>
-                        <p class="price">$20.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Pink label</h3>
+                        <p itemprop="description">Casual children shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">20.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/shoe-1768809_640.jpg" alt="Product image of used converse"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/shoe-1768809_640.jpg" alt="Product - A pair of used converse shoes" itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/sko-gammel-gamle-sko-brukt-1768809/ -->
-                        <h3>Converse</h3>
-                        <p>Used Converse shoes</p>
-                        <p class="price">$9.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Converse</h3>
+                        <p itemprop="description">Used Converse shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">9.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/pink-shoes-589193_640.jpg" alt="Product image of trendy pink shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/pink-shoes-589193_640.jpg" alt="Product - Trendy pink shoes with high heels" itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/rosa-sko-sko-h%C3%B8ye-h%C3%A6ler-pumpe-589193/ -->
-                        <h3>Pink Edge</h3>
-                        <p>Trendy shoes</p>
-                        <p class="price">$39.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Pink Edge</h3>
+                        <p itemprop="description">Trendy shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">39.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/womens-shoes-178163_640.jpg" alt="Product image of party shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/womens-shoes-178163_640.jpg" alt="Product - black party shoes, golden inside" itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/kvinners-sko-pin-mote-h%C3%B8y-178163/ -->
-                        <h3>Gold Cat</h3>
-                        <p>Party shoes deluxe</p>
-                        <p class="price">$35.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Gold Cat</h3>
+                        <p itemprop="description">Party shoes deluxe</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">35.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/running-shoe-371624_640.jpg" alt="Product image of running shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/running-shoe-371624_640.jpg" alt="Product - pink comfortable running shoes" itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/l%C3%B8pesko-sko-brooks-371624/ -->
-                        <h3>Running Wild</h3>
-                        <p>Comfy running shoes</p>
-                        <p class="price">$25.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Running Wild</h3>
+                        <p itemprop="description">Comfy running shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">25.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/black-shoes-589195_640.jpg" alt="Product image of black dancing shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/black-shoes-589195_640.jpg" alt="Product - black dancing shoes that have a shiny look" itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/svarte-sko-sko-pen-sko-pumpe-589195/ -->
-                        <h3>Black Gang</h3>
-                        <p>Dancing shoes</p>
-                        <p class="price">$29.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Black Gang</h3>
+                        <p itemprop="description">Dancing shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">29.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/shoe-506826_640.jpg" alt="Product image of Black women shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/shoe-506826_640.jpg" alt="Product - Black women shoes with high heels, stops at the ancle." itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/sko-h%C3%A6l-mote-bootee-506826/ -->
-                        <h3>Black Velvet</h3>
-                        <p>Elegant and comfy women shoes</p>
-                        <p class="price">$39.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Black Velvet</h3>
+                        <p itemprop="description">Elegant and comfy women shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">39.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/shoe-629643_640.jpg" alt="Product image of sports shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/shoe-629643_640.jpg" alt="Product - green sport shoes for running." itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/sko-sportssko-l%C3%B8ype-sport-l%C3%B8ping-629643/ -->
-                        <h3>Merindo Green</h3>
-                        <p>Bouncy running shoes</p>
-                        <p class="price">$29.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Merindo Green</h3>
+                        <p itemprop="description">Bouncy running shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">29.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/childrens-shoes-3104832_640.jpg" alt="Product image of pink child shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/childrens-shoes-3104832_640.jpg" alt="Product - pink children shoes." itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/barnesko-materiale-liten-sko-3104832/ -->
-                        <h3>Pink label</h3>
-                        <p>Casual children shoes</p>
-                        <p class="price">$20.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Pink label</h3>
+                        <p itemprop="description">Casual children shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">20.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
-                    <article class="product-card">
-                        <a href="produkt.html"><img src="img/shoe-1768809_640.jpg" alt="Product image of used converse shoes"></a>
+                    <article itemscope itemtype="http://schema.org/Product" class="product-card">
+                        <a href="produkt.html"><img src="img/shoe-1768809_640.jpg" alt="Product -  A pair of used converse shoes that looks very used and dirty" itemprop="image"></a>
                         <!-- https://pixabay.com/no/photos/sko-gammel-gamle-sko-brukt-1768809/ -->
-                        <h3>Converse</h3>
-                        <p>Used Converse shoes</p>
-                        <p class="price">$9.99</p>
-                        <a href="#">Add to cart</a>
+                        <h3 itemprop="name">Converse</h3>
+                        <p itemprop="description">Used Converse shoes</p>
+                        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price"><span itemprop="price">9.99</span>
+                            <meta itemprop="priceCurrency" content="USD"></p>
+                        <a href="#" itemprop="url">Add to cart</a>
                     </article>
                 </section>
                 <aside class="more-container">
-                    <a href="#" class="more-button"> More </a>
+                    <a href="#" class="more-button" role="button"> More </a>
                 </aside>
             </main>
-            <footer>
+            <footer itemscope itemtype="http://schema.org/Organization">
                 <div class="flex-container">
                     <section class="footer-information">
-                        <h2>Prosko</h2>
-                        <p>Welcome to our online store! ProSko is an e-commerce platform that specializes in footwear for people of all ages. Our mission is to offer a pair of shoes for every individual. We provide a diverse range of options, from premium brands like Bugatti and Timberland to more budget-friendly choices such as Adidas and Nike. Our selection is continually expanding, with new products being added regularly.</p>
-                        <p>In partnership with environmental organizations, we sell both new and used shoes to reduce our environmental footprint. Additionally, we package all our shoes in eco-friendly materials. At ProSko, we offer free shipping on orders over $100 and have a hassle-free return policy in case you're not satisfied with your purchase. Thank you for choosing ProSko for all your footwear needs!</p>
+                        <h1 itemprop="name"><a href="index.html" aria-label="homepage">ProSko</a></h1>
+                        <p itemprop="description">Welcome to our online store! ProSko is an e-commerce platform that specializes in footwear for people of all ages. Our mission is to offer a pair of shoes for every individual. We provide a diverse range of options, from premium brands like Bugatti and Timberland to more budget-friendly choices such as Adidas and Nike. Our selection is continually expanding, with new products being added regularly.</p>
+                        <p itemprop="description">In partnership with environmental organizations, we sell both new and used shoes to reduce our environmental footprint. Additionally, we package all our shoes in eco-friendly materials. At ProSko, we offer free shipping on orders over $100 and have a hassle-free return policy in case you're not satisfied with your purchase. Thank you for choosing ProSko for all your footwear needs!</p>
                     </section>
                     <div class="about-follow-container">
                         <section class="about-us">
-                            <h3>About us</h3>
+                            <h2>About us</h2>
                             <ul>
                                 <li><a href="#">Customer Club</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
@@ -240,24 +304,25 @@
                         <section class="follow-us">
                             <h3>Follow us</h3>
                             <ul class="follow-icons">
-                                <li><i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i></li>
-                                <li><i class="fa-brands fa-instagram fa-2xl" style="color: #000000;"></i></li>
-                                <li><i class="fa-brands fa-facebook fa-2xl" style="color: #000000;"></i></li>
-                                <li><i class="fa-brands fa-tiktok fa-2xl" style="color: #000000;"></i></li>
+                                <li><i class="fa-brands fa-twitter fa-2xl" style="color: #000000;" aria-label="follow us on twitter/x"></i></li>
+                                <li><i class="fa-brands fa-instagram fa-2xl" style="color: #000000;" aria-label="follow us on instagram"></i></li>
+                                <li><i class="fa-brands fa-facebook fa-2xl" style="color: #000000;" aria-label="follow us on facebook"></i></li>
+                                <li><i class="fa-brands fa-tiktok fa-2xl" style="color: #000000;" aria-label="follow us on tiktok"></i></li>
                             </ul>
                         </section>
                     </div>
                     <section class="payment">
                         <h3>Payment Methods</h3>
                         <ul class="payment-icons">
-                            <li><i class="fa-brands fa-paypal fa-2xl" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-stripe fa-2xl" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-cc-visa fa-2xl" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-cc-mastercard fa-2xl" style="color: #000000;"></i></li>
+                            <li><i class="fa-brands fa-paypal fa-2xl" style="color: #000000;" aria-label="pay with paypal"></i></li>
+                            <li><i class="fa-brands fa-stripe fa-2xl" style="color: #000000;" aria-label="pay with stripe"></i></li>
+                            <li><i class="fa-brands fa-cc-visa fa-2xl" style="color: #000000;" aria-label="pay with visa"></i></li>
+                            <li><i class="fa-brands fa-cc-mastercard fa-2xl" style="color: #000000;" aria-label="pay with mastercard"></i></li>
                         </ul> 
+                        <meta itemprop="paymentAccepted" content="Visa, Mastercard, PayPal, Stripe">
                     </section>
-                    <button class="cookies"><i class="fa-solid fa-cookie-bite fa-2xl" style="color: #000000;"></i></button>
-                    <button class="contact"><i class="fa-solid fa-message fa-2xl" style="color: #000000;"></i></button>
+                    <i class="cookies fa-solid fa-cookie-bite fa-2xl" style="color: #000000;" aria-label="cookie settings"></i>
+                    <i class="contact fa-solid fa-message fa-2xl" style="color: #000000;" aria-label="chat with us"></i>
                 </div>
             </footer>
         </div>

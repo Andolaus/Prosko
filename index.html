@@ -3,14 +3,42 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="A shoe store that offers a shoe for everyone. 
+        Featuring popular brands like Adidas, Vans, Converse and more. 
+        Everything from affordable shoes to premium. We have a wide range of categories,
+        including Women's shoes, Men's shoes and Children's shoes.">
+        <meta name="author" content="Andreas Olaussen">
+
+        <!-- Meta for Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="ProSko - An online shoe store for everyone!">
+        <meta property="og:description" content="A shoe store that offers a shoe for everyone. 
+        Featuring popular brands like Adidas, Vans, Converse and more. 
+        Everything from affordable shoes to premium. We have a wide range of categories,
+        including Women's shoes, Men's shoes and Children's shoes.">
+        <meta property="og:image" content="img/alexis-chloe-FcgxMCkjwEo-unsplash.jpg">
+        <meta property="og:url" content="https://itstud.hiof.no/~andreabo/oblig4/index.html">
+
+        <!-- Meta for Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="ProSko - An online shoe store for everyone!">
+        <meta name="twitter:description" content="A shoe store that offers a shoe for everyone.
+        Featuring popular brands like Adidas, Vans, Converse and more. 
+        Everything from affordable shoes to premium. We have a wide range of categories, 
+        including Women's shoes, Men's shoes and Children's shoes.">
+        <meta name="twitter:image" content="img/alexis-chloe-FcgxMCkjwEo-unsplash.jpg">
+        <meta name="twitter:url" content="https://itstud.hiof.no/~andreabo/oblig4/index.html">
+
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/font/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
         <link href="css/font/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>ProSko Nettbutikk</title>
+        <title>ProSko - An online shoe store for everyone!</title>
     </head>
     <body>
+        <a href="#main" class="skip" aria-label="Skip to main content">Skip to main content</a>
         <nav class="shipping">
             <ul class="shipping-info">
                 <li><a href="#">30 days return policy</a></li>
@@ -22,10 +50,15 @@
             <header>       
                 <nav>
                     <div class="logo-nav">
-                        <i id="meny" class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
-                        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i>
-                        <a class="logo" href="index.html" id="logo">ProSko</a>
-                        <a href="login.html"><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i></a>
+                        <i id="meny" class="fa-solid fa-bars fa-xl" style="color: #000000;" role="button" aria-label="open menu"></i>
+                        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;" aria-label="search"></i>
+                        <a class="logo" href="index.html" id="logo" aria-label="prosko homepage">ProSko</a>
+                        <a href="login.html">
+                            <span aria-hidden="true">
+                            <i class="fa-solid fa-user fa-xl" style="color: #000000;" aria-label="shopping cart"></i>
+                            </span>
+                            <span class="sr-only">Go to login site</span>
+                        </a>
                         <i class="fa-solid fa-cart-shopping fa-xl" style="color: #000000;"></i>
                     </div>
                     <ul class="navbar">
@@ -35,46 +68,47 @@
                         <li><a href=#>Brands</a></li>
                         <li><a href=#>Accessories</a></li>
                         <li><a href="login.html">Customer club</a></li>
+                        <li><a href="analyse.html">Analyse</a></li>
                     </ul>
                 </nav>
-                    <img class="header-image" src="img/alexis-chloe-FcgxMCkjwEo-unsplash.jpg" alt="Image of a woman sitting on the ground with her legs crossed">
+                    <img class="header-image" src="img/alexis-chloe-FcgxMCkjwEo-unsplash.jpg" alt="A woman sitting in front of a wall on the ground with her legs crossed, looking into the camera.">
                     <!-- https://unsplash.com/photos/FcgxMCkjwEo -->
             </header>
-            <main>
+            <main id="main">
                 <section>
                     <h4 class="welcome">Welcome to our online store</h4>
                     <aside class="index-products-container">
                         <article>
                             <h2><a href="produkt.html">Women</a></h2>
-                            <img class="women-img" src="img/franco-figueroa-bHrnn1h_5YY-unsplash.jpg" alt="Image category for women">
+                            <img class="women-img" src="img/franco-figueroa-bHrnn1h_5YY-unsplash.jpg" alt="Image category for women. A woman squatting on the ground looking at the camera.">
                             <!-- https://unsplash.com/photos/woman-looking-down-bHrnn1h_5YY -->
                         </article>
                         <article>
                             <h2><a href="produkt.html">Men</a></h2>
-                            <img class="man-img" src="img/wieger-stienstra-t2LACMcVNgA-unsplash.jpg" alt="Image category for men">
+                            <img class="man-img" src="img/wieger-stienstra-t2LACMcVNgA-unsplash.jpg" alt="Image category for men. A man leaning on a wall casually looking at the camera.  ">
                             <!-- https://unsplash.com/photos/woman-in-blue-denim-jeans-and-black-leather-jacket-standing-beside-white-wall-during-daytime-t2LACMcVNgA -->
                         </article>
                     </aside>
                         <article>
                             <h2><a href="produkt.html">Children</a></h2>
-                            <img class="child-img" src="img/chris-hardy-1JHDnBniINE-unsplash.jpg" alt="Image category for kids">
+                            <img class="child-img" src="img/chris-hardy-1JHDnBniINE-unsplash.jpg" alt="Image category for kids. A child jumping in the air while looking at the ground">
                             <!-- https://unsplash.com/photos/boy-in-blue-jacket-and-red-pants-jumping-on-brown-field-during-daytime-1JHDnBniINE -->
                         </article>
                 </section>
                 <section>
                     <h3 class="h3-brands">Brands</h3>
                     <ul class="brands">
-                        <li><img src="img/adidas-311450_640.jpg" alt="Adidas brand image"></li> <!-- https://pixabay.com/no/vectors/adidas-selskap-symbol-ikon-sko-311450/ -->
-                        <li><img src="img/animal-2028258_640.jpg" alt="Brand image of animal"></li> <!-- https://pixabay.com/no/vectors/dyr-ansikt-logo-vaskebj%C3%B8rn-ond-2028258/ -->
-                        <li><img src="img/black-307583_640.jpg" alt="Brand image"></li> <!-- https://pixabay.com/no/vectors/svart-sko-converse-ikke-sant-307583/ -->
-                        <li><img src="img/fire-303309_640.jpg" alt="Brand Image"></li> <!-- https://pixabay.com/no/vectors/brann-flamme-svart-sirkel-logo-303309/ -->
-                        <li><img src="img/silhouette-3313481_640.jpg" alt="Brand Image"></li> <!-- https://pixabay.com/no/vectors/silhuett-blekksprut-vektor-grafikk-3313481/ -->
+                        <li><img src="img/adidas-311450_640.jpg" alt="Adidas brand logo"></li> <!-- https://pixabay.com/no/vectors/adidas-selskap-symbol-ikon-sko-311450/ -->
+                        <li><img src="img/animal-2028258_640.jpg" alt="Brand logo of a racoon."></li> <!-- https://pixabay.com/no/vectors/dyr-ansikt-logo-vaskebj%C3%B8rn-ond-2028258/ -->
+                        <li><img src="img/black-307583_640.jpg" alt="Brand logo of a converse shoe in black and white"></li> <!-- https://pixabay.com/no/vectors/svart-sko-converse-ikke-sant-307583/ -->
+                        <li><img src="img/fire-303309_640.jpg" alt="Brand logo of a fire with black flames in a circle."></li> <!-- https://pixabay.com/no/vectors/brann-flamme-svart-sirkel-logo-303309/ -->
+                        <li><img src="img/silhouette-3313481_640.jpg" alt="Brand logo of a black octopus."></li> <!-- https://pixabay.com/no/vectors/silhuett-blekksprut-vektor-grafikk-3313481/ -->
                     </ul>
                 </section>
                 <section class="products">
-                    <h2 class="h2-products">Products</h2>
+                    <h3 class="h2-products">Products</h3>
                     <article class="product-card">
-                        <a href="produkt.html"><img src="img/shoe-506826_640.jpg" alt="Product image of Black women shoes"></a>
+                        <a href="produkt.html"><img src="img/shoe-506826_640.jpg" alt="Product - Black women shoes with high heels"></a>
                         <!-- https://pixabay.com/no/photos/sko-h%C3%A6l-mote-bootee-506826/ -->
                         <h3>Black Velvet</h3>
                         <p>Elegant and comfy women shoes</p>
@@ -82,7 +116,7 @@
                         <a href="#">Add to cart</a>
                     </article>
                     <article class="product-card">
-                        <a href="produkt.html"><img src="img/shoe-629643_640.jpg" alt="Product image of sports shoes"></a>
+                        <a href="produkt.html"><img src="img/shoe-629643_640.jpg" alt="Product - green sport shoes."></a>
                         <!-- https://pixabay.com/no/photos/sko-sportssko-l%C3%B8ype-sport-l%C3%B8ping-629643/ -->
                         <h3>Merindo green</h3>
                         <p>Bouncy running shoes</p>
@@ -90,7 +124,7 @@
                         <a href="#">Add to cart</a>
                     </article>
                     <article class="product-card">
-                        <a href="produkt.html"><img src="img/childrens-shoes-3104832_640.jpg" alt="Product image of children shoes"></a>
+                        <a href="produkt.html"><img src="img/childrens-shoes-3104832_640.jpg" alt="Product - pink children shoes without shoelaces."></a>
                         <!-- https://pixabay.com/no/photos/barnesko-materiale-liten-sko-3104832/ -->
                         <h3>Pink label</h3>
                         <p>Casual children shoes</p>
@@ -98,7 +132,7 @@
                         <a href="#">Add to cart</a>
                     </article>
                     <article class="product-card">
-                        <a href="produkt.html"><img src="img/shoe-1768809_640.jpg" alt="Product image of used converse shoes"></a>
+                        <a href="produkt.html"><img src="img/shoe-1768809_640.jpg" alt="Product -  A pair of used converse shoes that looks very used and dirty"></a>
                         <!-- https://pixabay.com/no/photos/sko-gammel-gamle-sko-brukt-1768809/ -->
                         <h3>Converse</h3>
                         <p>Used Converse shoes</p>
@@ -110,13 +144,13 @@
             <footer>
                 <div class="flex-container">
                     <section class="footer-information">
-                        <h1>Prosko</h1>
+                        <h1><a href="index.html" aria-label="homepage">ProSko</a></h1>
                         <p>Welcome to our online store! ProSko is an e-commerce platform that specializes in footwear for people of all ages. Our mission is to offer a pair of shoes for every individual. We provide a diverse range of options, from premium brands like Bugatti and Timberland to more budget-friendly choices such as Adidas and Nike. Our selection is continually expanding, with new products being added regularly.</p>
                         <p>In partnership with environmental organizations, we sell both new and used shoes to reduce our environmental footprint. Additionally, we package all our shoes in eco-friendly materials. At ProSko, we offer free shipping on orders over $100 and have a hassle-free return policy in case you're not satisfied with your purchase. Thank you for choosing ProSko for all your footwear needs!</p>
                     </section>
                     <div class="about-follow-container">
                         <section class="about-us">
-                            <h3>About us</h3>
+                            <h2>About us</h2>
                             <ul>
                                 <li><a href="#">Customer Club</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
@@ -127,24 +161,24 @@
                         <section class="follow-us">
                             <h3>Follow us</h3>
                             <ul class="follow-icons">
-                                <li><i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i></li>
-                                <li><i class="fa-brands fa-instagram fa-2xl" style="color: #000000;"></i></li>
-                                <li><i class="fa-brands fa-facebook fa-2xl" style="color: #000000;"></i></li>
-                                <li><i class="fa-brands fa-tiktok fa-2xl" style="color: #000000;"></i></li>
+                                <li><i class="fa-brands fa-twitter fa-2xl" style="color: #000000;" aria-label="follow us on twitter/x"></i></li>
+                                <li><i class="fa-brands fa-instagram fa-2xl" style="color: #000000;" aria-label="follow us on instagram"></i></li>
+                                <li><i class="fa-brands fa-facebook fa-2xl" style="color: #000000;" aria-label="follow us on facebook"></i></li>
+                                <li><i class="fa-brands fa-tiktok fa-2xl" style="color: #000000;" aria-label="follow us on tiktok"></i></li>
                             </ul>
                         </section>
                     </div>
                     <section class="payment">
                         <h3>Payment Methods</h3>
                         <ul class="payment-icons">
-                            <li><i class="fa-brands fa-paypal fa-2xl" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-stripe fa-2xl" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-cc-visa fa-2xl" style="color: #000000;"></i></li>
-                            <li><i class="fa-brands fa-cc-mastercard fa-2xl" style="color: #000000;"></i></li>
+                            <li><i class="fa-brands fa-paypal fa-2xl" style="color: #000000;" aria-label="pay with paypal"></i></li>
+                            <li><i class="fa-brands fa-stripe fa-2xl" style="color: #000000;" aria-label="pay with stripe"></i></li>
+                            <li><i class="fa-brands fa-cc-visa fa-2xl" style="color: #000000;" aria-label="pay with visa"></i></li>
+                            <li><i class="fa-brands fa-cc-mastercard fa-2xl" style="color: #000000;" aria-label="pay with mastercard"></i></li>
                         </ul> 
                     </section>
-                    <button class="cookies"><i class="fa-solid fa-cookie-bite fa-2xl" style="color: #000000;"></i></button>
-                    <button class="contact"><i class="fa-solid fa-message fa-2xl" style="color: #000000;"></i></button>
+                    <i class="cookies fa-solid fa-cookie-bite fa-2xl" style="color: #000000;" aria-label="cookie settings"></i>
+                    <i class="contact fa-solid fa-message fa-2xl" style="color: #000000;" aria-label="chat with us"></i>
                 </div>
             </footer>
         </div>

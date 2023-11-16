@@ -2,10 +2,32 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.skip {
+    position: absolute;
+    top: -999px;
+    left: -999px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+}
+
+a.skip:active, a.skip:focus, a.skip:hover {
+    left: 0; 
+    top: 0; 
+    width: auto;
+    height: auto;
+    overflow: visible; 
+}
+
 h1 {
     display: flex;
     justify-content: center;
     font-size: 3.5rem;
+}
+
+.h1-analysis {
+    margin-top: 10%;
 }
 
 .underline {
@@ -121,6 +143,140 @@ main {
     grid-area: main;
 }
 
+table, th, td {
+    border: 1px solid black
+}
+
+.keywords {
+    display: flex;
+    flex-basis: fit-content;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #efeeef;
+}
+
+.seo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.h2-top-position {
+    order: -1;
+    margin-bottom: 20px;
+}
+
+.seo-article {
+    flex-direction: column;
+    flex-basis: 100%;
+    order: 2; 
+    align-items: center;
+}
+
+.seo-article img {
+    width: 520px;
+    height: 420px;
+}
+
+.uu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.uu-section img {
+    width: auto;
+    height: auto;
+    margin-bottom: 32px;
+}
+
+.uu-article {
+    flex-direction: column;
+    flex-basis: 100%;
+    order: 2; 
+    align-items: center;
+}
+
+.uu-article ul li {
+    text-align: left;
+    list-style: disc;
+}
+
+.first-results-section {
+    margin-left: 60px;
+}
+
+.first-results-section h2 {
+    text-align: center;
+}
+
+.chatgpt-section {
+    display: flex;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.chatgpt-section ul li {
+    text-align: left;
+    list-style: disc;
+}
+
+.accessibility h2{
+    text-align: center;
+}
+
+.accessibility p {
+    margin-left: 60px;
+}
+
+.measures h2 {
+    text-align: center;
+}
+
+.measures ul li {
+    list-style: disc;
+    margin-left: 30px;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.seo-results {
+    flex-direction: column;
+    flex-basis: 100%;
+    order: 2; 
+    align-items: center;
+}
+
+.seo-results img {
+    width: auto;
+    height: auto;
+}
+
+.uu-results {
+    flex-direction: column;
+    flex-basis: 100%;
+    order: 2; 
+    align-items: center;
+}
+
+.uu-results img {
+    width: auto;
+    height: auto;
+    margin-bottom: 32px;
+}
+
+.results-summary {
+    flex-direction: column;
+    flex-basis: 100%;
+    order: 2; 
+    align-items: center;
+}
 a {
     text-decoration: none;
     color: black;
@@ -258,7 +414,7 @@ article {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    z-index: 999;
+    z-index: 998;
 }
 
 .contact {
@@ -267,7 +423,7 @@ article {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 999;
+    z-index: 998;
 }
 
 footer {
@@ -399,6 +555,14 @@ footer {
     flex-direction: column;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px; 
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+}
+
 @media only screen and (min-width: 600px) {
     #grid-container {
         display: grid;
@@ -417,9 +581,10 @@ footer {
     .shipping-info {
         display: flex;
         flex-direction: row;
-        gap: 24rem;
+        gap: 25rem;
         margin: 0;
-        margin-right: 59px;
+        margin-right: 41px;
+        font-size: 12px;
     }
     
     #meny {
@@ -431,9 +596,10 @@ footer {
         flex-direction: row;
         gap: 2rem;
         list-style: none;
-        margin: 13px;
-        font-size: 23px;
+        margin: 16px;
+        font-size: 17px;
     }
+    
     .fa-xl {
         font-size: 1.1em;
         line-height: 2.042em;
@@ -445,10 +611,10 @@ footer {
         justify-content: space-between;
         position: fixed;
         width: 100%;
-        padding: 1rem;
+        padding: 8px;
         box-sizing: border-box;
         z-index: 98;
-        margin-top: 0px;
+        margin-top: 13px;
       }
 
     nav {
@@ -517,7 +683,7 @@ footer {
         flex-direction: column;
         gap: 11px;
         width: 232px;
-        margin-top: -62px;
+        margin-top: -26px;
       }
 
     .fa-facebook {
@@ -539,7 +705,7 @@ footer {
     .follow-icons {
         display: flex;
         flex-direction: row;
-        gap: 135px;
+        gap: 126px;
         margin-top: 50px;
       }
 
